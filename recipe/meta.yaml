@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/huxt-{{ version }}.tar.gz
-  sha256: 9a8b9ff2756e69c09332b167acc969ef92422c584b5fe7cc353896d3c21ca057
+  url: https://github.com/University-of-Reading-Space-Science/HUXt/archive/v{{ version }}.tar.gz
+  sha256: 89bbff5cf364895ebc9a35dc20deecb7386575453cf2228c76a0b3129269d6ce
 
 build:
   entry_points:
