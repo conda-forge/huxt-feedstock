@@ -1,4 +1,4 @@
-{% set name = "HUXt" %}
+{% set name = "huxt" %}
 {% set version = "5.0.2" %}
 {% set python_min = "3.12" %}
 
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/University-of-Reading-Space-Science/HUXt/archive/v{{ version }}.tar.gz
-  sha256: 89bbff5cf364895ebc9a35dc20deecb7386575453cf2228c76a0b3129269d6ce
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/huxt-{{ version }}.tar.gz
+  sha256: 9a8b9ff2756e69c09332b167acc969ef92422c584b5fe7cc353896d3c21ca057
 
 build:
   entry_points:
@@ -20,7 +20,7 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python >=3.12.11
     - setuptools >=61.0
     - pip
   run:
@@ -34,10 +34,11 @@ requirements:
     - imageio-ffmpeg >=0.6.0
     - jupyterlab >=4.4.7
     - matplotlib-base >=3.10.6
+    - netcdf4 >=1.6.2
     - numba >=0.61.2
     - numpy >=2.2.6
     - pandas >=2.3.2
-    - pyhdf >=0.11.6
+    - pytest >=8.4.2
     - requests >=2.32.5
     - scipy >=1.16.1
     - sunpy >=7.0.1
@@ -61,7 +62,6 @@ about:
     HUXt is a python implelementation of a computationally efficient solar wind model.
   license: MIT
   license_file: LICENSE.md
-
 extra:
   recipe-maintainers:
     - LukeBarnard
