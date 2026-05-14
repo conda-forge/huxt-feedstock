@@ -1,5 +1,5 @@
 {% set name = "huxt" %}
-{% set version = "5.0.2" %}
+{% set version = "5.0.3" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/University-of-Reading-Space-Science/HUXt/archive/v{{ version }}.tar.gz
-  sha256: 89bbff5cf364895ebc9a35dc20deecb7386575453cf2228c76a0b3129269d6ce
+  sha256: ab21928e3668adf2f0d2da242ad7c45a014344cfd03800758188802fc3370caa
 
 build:
   entry_points:
